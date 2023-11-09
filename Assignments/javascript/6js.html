@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!--Let keywor-->
+    <h2>Redeclaring a Variable Using let</h2>
+    <p id="demo1"></p>
+    <script>
+      let  x = 10;
+      // Here x is 10
+      {  
+        let x = 2;
+        // Here x is 2
+      }
+      // Here x is 10
+      document.getElementById("demo1").innerHTML = x;
+    </script>
+
+    <!--var and const keyword-->
+    <h2>Declaring a Variable Using const</h2>
+    <p id="demo2"></p>
+    <script>
+    var  y = 8;
+    // Here x is 10
+    {  
+      const z = 2;
+      // Here x is 2
+    }
+    // Here x is 10
+    document.getElementById("demo2").innerHTML = y;
+    </script>
+
+    <!--Arrow-->
+    <h2>JavaScript Arrow Functions</h2>
+    <p id="demo3"></p>
+
+    <script>
+    const a = (x, y) => x * y;
+    document.getElementById("demo3").innerHTML = a(5, 5);
+    </script>
+
+    <!--(...)Operator-->
+    
+    <h2>The ... Operator</h2>
+    <p id="demo4"></p>
+    <script>
+    const q1 = ["Jan", "Feb", "Mar"];
+    const q2 = ["Apr", "May", "Jun"];
+    const q3 = ["Jul", "Aug", "Sep"];
+    const q4 = ["Oct", "Nov", "May"];
+    const year = [...q1, ...q2, ...q3, ...q4];
+    document.getElementById("demo4").innerHTML = year; 
+    </script>
+
+    <!--For of-->
+    <h2>JavaScript For Of Loop</h2>
+    <p id="demo5"></p>
+
+    <script>
+    const cars = ["BMW", "Volvo", "Mini"];
+    let text = "";
+    for (let x of cars) {
+      text += x + "<br>";
+    }
+    document.getElementById("demo5").innerHTML = text;
+    </script>
+
+    <!--Maps-->
+    <h2>JavaScript Map Objects</h2>
+    <p id="demo6"></p>
+    <script>
+    // Create a Map
+    const fruits = new Map([
+      ["apples", 500],
+      ["bananas", 300],
+      ["oranges", 200]
+    ]);
+    document.getElementById("demo6").innerHTML = fruits.get("apples");
+    </script>
+
+    <!--Classes-->
+    <h2>JavaScript Classes</h2>
+    <p id="demo7"></p>
+
+    <script>
+    class Car {
+      constructor(name, year) {
+        this.name = name;
+        this.year = year;
+      }
+    }
+    const myCar1 = new Car("Ford", 2014);
+    const myCar2 = new Car("Audi", 2019);
+    document.getElementById("demo7").innerHTML =
+    myCar1.name + " " + myCar2.name;
+    </script>
+
+    <!--Promises-->
+    <h2>JavaScript Promise</h2>
+    <p>Wait 3 seconds (3000 milliseconds) for this page to change.</p>
+    <h1 id="demo8"></h1>
+
+    <script>
+    const myPromise = new Promise(function(myResolve, myReject) {
+      setTimeout(function(){ myResolve("I love You !!"); }, 3000);
+    });
+
+    myPromise.then(function(value) {
+      document.getElementById("demo8").innerHTML = value;
+    });
+    </script>
+
+    <!--Default Parameters-->
+    <h2>Default Parameter Values</h2>
+    <p>If y is not passed or undefined, then y = 10:</p>
+    <p id="demo9"></p>
+    <script>
+    function myFunction(x, y = 10) {
+      return x + y;
+    }
+    document.getElementById("demo9").innerHTML = myFunction(5);
+    </script>
+
+    <!--Rest Parameters-->
+    <h2>The Rest Parameter</h2>
+    <p>The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:</p>
+    <p id="demo10"></p>
+    <script>
+    function sum(...args) {
+      let sum = 0;
+      for (let arg of args) sum += arg;
+      return sum;
+    }
+    let b = sum(4, 9, 16, 25, 29, 100, 66, 77);
+    document.getElementById("demo10").innerHTML = b;
+    </script>
+
+    <!--string Methods-->
+    <h2>The includes(), startsWith(), endsWith() Method</h2>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <script>
+    let text1 = "Hello world, welcome to the universe.";
+    document.getElementById("demo11").innerHTML = text1.includes("world");
+    document.getElementById("demo12").innerHTML = text1.startsWith("Hello");
+    document.getElementById("demo13").innerHTML = text1.endsWith("welcome");
+    </script>
+
+    <!--Array Methods-->
+    <h2>The from() Method</h2>
+    <p id="demo14"></p>
+    <script>
+    const myArr = Array.from("ABCDEFG");
+    document.getElementById("demo14").innerHTML = myArr;
+    </script>
+    
+    <h2>The keys() Method</h2>
+    <p id="demo15"></p>
+    <script>
+    const fruit = ["Banana", "Orange", "Apple", "Mango"];
+    const keys = fruit.keys();
+    let text2 = "";
+    for (let x of keys) {
+      text2 += x + "<br>";
+    }
+    document.getElementById("demo15").innerHTML = text2;
+    </script>
+
+    <h2>The find() Method</h2>
+    <p id="demo16"></p>
+    <script>
+    const numbers = [4, 9, 16, 25, 29];
+    let first = numbers.find(myFunction);
+    document.getElementById("demo16").innerHTML = "First number over 18 is " + first;
+    function myFunction(value, index, array) {
+      return value > 18;
+    }
+    </script>
+
+  </body>
+</html>

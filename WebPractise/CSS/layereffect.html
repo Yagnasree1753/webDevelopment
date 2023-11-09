@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="utf-8"><title>Example of CSS layer effect</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            opacity: 0.9;
+            position: absolute;
+        }
+        .pink{
+            background-color: palevioletred;
+            z-index: 1;
+        }
+        .yellow{
+            top: 30px;
+            left: 30px;
+            background-color: rgb(253, 255, 138);
+            z-index: 3;
+        }
+        .blue{
+            top: 60px;
+            left: 60px;
+            background-color: rgb(68, 218, 206);
+            z-index: 5;
+        }  
+    </style></head>
+    <body>
+        <div class="container">
+            <div class="box pink"></div>
+            <div class="box yellow"></div>
+            <div class="box blue"></div>
+        </div>
+    </body>
+</html>

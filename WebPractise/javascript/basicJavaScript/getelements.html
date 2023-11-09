@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<htm>
+    <body>
+        <script>
+            function mathAdd(){
+                var a= +document.getElementById("a").value; //Int parse ---- number
+                var b= +document.getElementById("b").value;
+                document.getElementById("Add").innerHTML = a+b;      
+            }
+            function mathSub(){
+                var a= +document.getElementById("a").value; //Int parse ---- number
+                var b= +document.getElementById("b").value;
+                document.getElementById("Sub").innerHTML = a-b;    
+            }
+            function mathMul(){
+                var a= +document.getElementById("a").value; //Int parse ---- number
+                var b= +document.getElementById("b").value;
+                document.getElementById("Mul").innerHTML = a*b;      
+            }
+            function mathDiv(){
+                var a= +document.getElementById("a").value; //Int parse ---- number
+                var b= +document.getElementById("b").value;
+                document.getElementById("Div").innerHTML = a/b;      
+            }
+
+        </script>
+        Enter A:<input id="a" type="text" name="txt1"><br>
+        Enter B:<input id="b" type="text" name="txt2"><br>
+        <button type="button" onclick="mathAdd()">Add</button>
+        <button type="button" onclick="mathSub()">Sub</button>
+        <button type="button" onclick="mathMul()">Mul</button>
+        <button type="button" onclick="mathDiv()">Div</button>
+        <p id="Add"></p>
+        <p id="Sub"></p>
+        <p id="Mul"></p>
+        <p id="Div"></p>
+    </body>
+</htm>

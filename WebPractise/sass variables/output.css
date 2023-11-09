@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(211, 242, 73);
+  color: rgba(78, 94, 95, 0.47);
+}
+
+button {
+  background-color: rgb(211, 242, 73);
+  color: azure;
+  padding: 10px 20px;
+}
+
+a {
+  color: rgba(78, 94, 95, 0.47);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=output.css.map */

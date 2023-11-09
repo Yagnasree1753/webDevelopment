@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .tile{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(237, 53, 111);
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+    }
+      
+    @keyframes example {
+        0%   {background-color:rgb(237, 53, 111); left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:rgb(74, 174, 231); left:200px; top:200px;}
+        75%  {background-color:rgb(32, 214, 175); left:0px; top:200px;}
+        100% {background-color:rgb(237, 53, 111); left:0px; top:0px;}
+    }
+    </style>
+</head>
+<body>
+    <div class="tile"></div>
+</body>
+</html>

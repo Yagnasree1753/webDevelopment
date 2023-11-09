@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Sample Form</title></head>
+    <body>
+        <form action="#">
+            <!--Text-->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <!--Password-->
+            <label for="--password--">Password</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <!--File-->
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file" required><br><br>
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <!--Dropdown-->
+            <label for="dropdown">Choose an option:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="Option1">Option1</option>
+                <option value="Option2">Option2</option>
+                <option value="Option3">Option3</option>
+            </select> <br><br>
+            <!--Radio-->
+            <label>Choose a size:</label>
+            <input type="radio" name="size">
+            <label for="smnall">Small</label>
+            <input type="radio" name="size">
+            <label for="medium">Medium</label>
+            <input type="radio" name="size">
+            <label for="large">Large</label> <br><br>
+            <!--Checkbox-->
+            <input type="checkbox" id="subcribe" name="subcribe" value="yes">
+            <label for="subcribe">Subscribe to newsletter</label><br><br>
+            <!--Textarea-->
+            <label for="message">Message: </label><br>
+            <textarea id="message" bname="message" rows="4" cols="50"></textarea><br><br>
+            <!--DateTime-->
+            <label for="datetime">Select a date and time</label>
+            <input type="datetime-local" id="datetime" name="datetime"><br><br>
+            <!--Submit Button-->
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

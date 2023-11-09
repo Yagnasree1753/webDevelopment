@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>CSS Grid Example</title>
+        <style> 
+            /*Define a CSS Grid container */
+            .grid-container{
+                display: grid;
+                grid-template-columns: 1fx 2fx; /* Two columns, first is 1 fraction, second is 2 fractions*/ 
+                grid-gap: 10px; /* Gap between grid items */ 
+                width: 80%; /* Set a fixed width for the grid container */ 
+                margin: 0 auto; /*Center the grid container horizontally */
+            }
+
+            /* Style the grid items (placeholder content) */
+            .grid-item {
+                padding: 20px;
+                background-color: #101010; 
+                color: #ddd;
+                border: 1px solid #34bee0;
+                border-width: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <!-- Grid Item 1 --> 
+            <div class="grid-item">
+                <h2>Column 1</h2>
+                <p>This is the left column.</p>
+            </div>
+            <!-- Grid Item 2 -->
+            <div class="grid-item">
+                <h2>Column 2</h2>
+                <p>This is the right column.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Display Properties Example</title>
+        <style>
+            .inline-element {
+            display: inline;
+            margin-right: 10px; /* Only horizontal margin applies */
+            border: 1px solid red;
+            }
+
+            .block-element {
+            display: block;
+            width: 50%;
+            margin: 20px 0; /* Top and bottom margin applies */
+            border: 1px solid blue;
+            }
+
+            .inline-block-element {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            margin: 10px;
+            border: 1px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Inline Elements -->
+        <span class="inline-element">This is an inline element.</span>
+        <span class="inline-element">Another inline element.</span>
+
+        <!-- Block Element -->
+        <div class="block-element">This is a block element. It takes the full width available and starts on a new line.</div>
+
+        <!-- Inline-Block Elements -->
+        <div class="inline-block-element">Inline-Block 1</div>
+        <div class="inline-block-element">Inline-Block 2</div>
+    </body>
+</html>

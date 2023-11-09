@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>T=<title>The example of CSS flex model</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+            background-color: pink;
+        }
+        .flex-container > div{
+            color: azure;
+            background-color: blueviolet;
+            width: 30px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: medium;
+            font-style: italic;
+        }
+    </style></head>
+    <body>
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+        </div>
+        <p>A Flexible layout must have parent element</p>
+        <p>Direct child elements of flexible container becomes flexible items </p>
+    </body>
+</html>

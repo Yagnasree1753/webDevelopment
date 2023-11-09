@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+            <input type="number" id="num1">
+            <select id="operator">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <input type="number" id="num2">
+            <button onclick="calculate()">Calculate</button>
+            <p>Result :<span id="result">0</span> </p>
+      
+        <script>
+            function calculate(){
+                const num1 = parseFloat(document.getElementById("num1").value);
+                const num2 = parseFloat(document.getElementById("num2").value);
+                const operator = document.getElementById("operator").value;
+                let result;
+
+                switch(operator){
+                    case "add" : result = num1 + num2; break;
+                    case "subtract" : result = num1 - num2; break;
+                    case "multiply" : result = num1 * num2; break;
+                    case "divide" : result = num1 / num2; break;
+                    default : result = 0;
+                }
+                
+                document.getElementById("result").textContent = result;
+            }
+        </script>

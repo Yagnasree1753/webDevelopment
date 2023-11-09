@@ -1,0 +1,20 @@
+main {
+    background-color: none;
+}
+
+main > p {
+    margin: 20px;
+    font-family:cursive;
+    color: blue;
+}
+.flex-container{
+    display: flex;
+    background-color: rgb(140, 53, 68);
+    flex-wrap: wrap;
+    width: auto;
+}
+.flex-container > div{
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+}

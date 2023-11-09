@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<htm>
+    <body>
+        <h2>Example- HTML forms</h2>
+        <form>
+            <label for="firstName">First Name</label>
+            <input typ="text" id="firstName"><br><br>
+            <lable for="lastName">Last Name</lable>
+            <input type="text" id="lastName"><br><br>
+        </form>
+        <button onclick="myFunction()">Click Me</button>
+        <p id="result"></p>
+        <script>
+            function myFunction(){
+                var fn=document.getElementById("firstName").value;
+                var ln=document.getElementById("lastName").value;
+                document.getElementById("result").innerHTML = fn + " " + ln;
+            }
+        </script>
+    </body>
+</htm>

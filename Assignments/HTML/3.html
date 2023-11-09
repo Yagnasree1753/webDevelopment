@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Form input controls</title></head>
+    <body>
+        <form>
+            <h1>Form Input Controls Example</h1>
+            <!-- Text Input -->
+            <label>Name:</label><input type="text" id="name123"  placeholder="Enter your name" required><br><br>
+
+            <!--password input-->
+            <label>password:</label><input type="password" id="password" placeholder="Enter your passowrd" required><br><br>
+
+            <!--Email input-->
+            <label>Email:</label><input type="email" id="email" placeholder="Enter your mail" required><br><br>
+
+            <!--Age input-->
+            <label>Age:</label><input type="number" id="Age" required><br><br>
+
+            <!--Rating-->
+            <label>Rating:</label><input type="range" id="range" required><br><br>
+
+            <!--Date input-->
+            <label>Date of Birth:</label><input type="date" id="Date of Birth" required><br><br>
+
+            <!--time input-->
+            <label>Time:</label><input type="time" id="Time"> <br><br>
+
+            <!--Image input-->
+            <label>Image:</label><input type="image" id="Image"><br><br>
+
+            <!--Week input-->
+            <label>Week:</label><input type="week" id="Week"> <br><br>
+
+            <!--Month input-->
+            <label>Month:</label><input type="month" id="Month"> <br><br>
+
+            <!--Date-time-Local input-->
+            <label>Date-time-Local:</label><input type="datetime-local" id="Date-time"> <br><br>
+
+            <!--URL input-->
+            <label>URL:</label><input type="url" id="URL"> <br><br>
+
+            <!--search input-->
+            <label>Search:</label><input type="search" id="Search"> <br><br>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" checked> <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+            <br><br>
+
+            <!-- Checkboxes -->
+            <label>Interests: </label> 
+            <input type="checkbox" id="interest1" name="interests" value="sports"><label for="interest1">Sports</label>
+            <input type="checkbox" id="interest2" name="interests" value="music"><label for="interest2">Music</label>
+            <input type="checkbox" id="interest3" name="interests" value="movies"><label for="interest3">Movies</label>
+            <br><br>
+
+            <!--Dropdown/select-->
+            <label for="Country">Country:</label>
+            <select id="Country" name="user-country">
+                <option value="USA">USA</option>
+                <option value="Canada">UK</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <br><br>
+
+            <!-- Textarea -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="user_message" rows="4" cols="50" placeholder="Your message here..." required></textarea><br><br>
+             
+            <!-- Submit Button -->
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>

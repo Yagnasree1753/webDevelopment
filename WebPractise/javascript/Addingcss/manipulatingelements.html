@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.8">
+        <title>Manipulating Elements</title>
+    </head>
+    <body>
+        <div id="parent">
+            <p id="child">Old Paragraph</p>
+        </div>
+        <button onclick="addElement()">Add Element</button>
+        <button onclick="removeElement()">Remove Element</button>
+        <button onclick="replaceElement()">Replace Element</button>
+        
+        <script>
+        function addElement() {
+            const newElement = document.createElement('div'); //<div></div> 
+            newElement.textContent = 'I am a new div!' //<div>I am a new div!</div> 
+            document.body.appendChild(newElement);
+        }
+        
+        function removeElement() {
+            const parent = document.getElementById('parent');
+            const child = document.getElementById('child');
+            if (child) {
+                parent.removeChild(child);
+            }
+        }
+        function replaceElement() {
+            const parent = document.getElementById('parent');
+            const newElement = document.createElement('span');
+            newElement.textContent = 'I am a new span!';
+            const child = document.getElementById('child');
+            if (child) {
+                parent.replaceChild (newElement, child);
+            } else {
+                parent.appendChild(newElement);
+            }
+        }
+        </script>
+    </body>
+</html>

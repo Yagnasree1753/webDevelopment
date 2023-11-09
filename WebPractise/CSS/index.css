@@ -1,0 +1,15 @@
+div{
+    background-color: grey;  
+} 
+p{
+    background-color: chartreuse; 
+}
+#intro{
+    background-color: pink;
+    color:red;
+    font-weight:bold;
+}
+.taste{
+    color:blue;
+    font-weight:bold;
+}

@@ -1,0 +1,21 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Event Bubbling</title>
+    </head>
+    <body>
+        <div id="parent">Parent
+            <button id="child">Click me!</button>
+        </div>
+        
+    <script>
+    document.getElementById('parent').addEventListener('click', () => { 
+        alert('Parent Div Clicked!'); 
+    });
+    document.getElementById('child').addEventListener('click', () => {
+         alert('Button Clicked!');
+    }); 
+    
+    </script>
